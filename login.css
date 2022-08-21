@@ -1,0 +1,31 @@
+.box2{
+    background-color: white;
+    padding:30px;
+    padding-top: 1px;
+    border:2px solid black;
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+.box1{
+    border: 3px solid blue;
+    padding:5px;
+    background-color: blueviolet;
+    width: 270px;
+    margin: auto;
+}
+h3{
+    color: darkblue;
+}
+.color{
+    color: blue;
+}
+.btn{
+    background-color: rgb(26, 135, 225);
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}

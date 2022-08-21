@@ -1,0 +1,73 @@
+<html>
+<head>
+<title> form </title>
+<style>
+    .required{
+     color:red;
+    
+    }
+    </style>
+</head>
+<body>
+<center>
+<form>
+<label>First Name</label>
+<span class="required">*</span>
+<input type="text" autofocus pattern="[A-az-Z]" maxlength="10"/>
+<br>
+<br>
+<label>Last Name</label>
+<span class="required">*</span>
+<input type="text" autofocus pattern="[A-az-Z]" maxlength="10" required pattern="[*]"/>
+<br>
+<br>
+<label>Gender:</label>
+<span class="required">*</span>
+<labe> Male</label>
+<input type="radio" name="my gender" />
+<labe> Female</label>
+<input type="radio" name="my gender" />
+<labe>Others</label>
+<input type="radio" name="my gender" />
+<br>
+<br>
+<label>DOB:<label>
+<span class="required">*</span>
+<input type="date"/>
+<br>
+<br>
+<label>Degree:</label>
+<span class="required">*</span>
+<select name="Degree">
+<option>Bachelors</option>
+<option>Masters</option>
+<option>Doctrate</option>
+</select>
+<br>
+<br>
+<label>Specialization</label>
+<span class="required">*</span>
+<input type="text" maxlength="40"/>
+<br>
+<br>
+<label>Current GPA</label>
+<span class="required">*</span>
+<input type="number" max="5" min="0" step="0.1"/>
+<br>
+<br>
+<label>phone number</label>
+<span class="required">*</span>
+<input type="tel"/>
+<br>
+<br>
+<label>Address</label>
+<span class="required">*</span>
+<textarea rows="4" column="10" maxlength="40"></textarea>
+<br>
+<br>
+<input type="submit"/>
+</form>
+</center>
+</body>
+</html>
+
