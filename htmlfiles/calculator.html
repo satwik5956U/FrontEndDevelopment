@@ -38,7 +38,7 @@
                         <input type="button" value="  (  " onclick="display('(')"/>
                     </td>
                     <td>
-                        <input type="button" value="CE"/>
+                        <input type="button" value="CE" onclick="delee()"/>
                     </td>
                     <td>
                         <input type="button" value="  )  " onclick="display(')')"/>
@@ -116,6 +116,10 @@
                 var p = document.getElementById("inp").value;
                 var q = eval(p);
                 document.getElementById("inp").value = q;
+            }
+            function delee(){
+                var st=document.getElementById("inp").value;
+                document.getElementById("inp").value=st.slice(0,st.length-1);
             }
         </script>
     </body>
