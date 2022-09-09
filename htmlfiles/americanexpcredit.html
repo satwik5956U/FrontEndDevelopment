@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function cardnumber(inputtxt) {
+            var cardno = /^(?:3[47][0-9]{13})$/;
+            if (inputtxt.value.match(cardno)) {
+                return true;
+            }
+            else {
+                alert("Not a valid Amercican Express credit card number!");
+                return false;
+            }
+        }
+    </script>
+    <table>
+        <tr>
+            <td>
+                <label>Enter card number:</label>
+            </td>
+            <td>
+                <input type="text" id="inp"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" onclick="cardnumber(document.getElementById('inp'))" value="check"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
