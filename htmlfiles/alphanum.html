@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        
+        function alphanumeric(inputtxt)
+        {
+            var letterNumber = /^[0-9a-zA-Z]+$/;
+            if(inputtxt.value.match(letterNumber))
+            {
+                confirm("are you sure?");
+                return true;
+            }
+            else
+            {
+                alert("message");
+                return false;
+            }
+        }
+    </script>
+    <table>
+        <tr>
+            <td><label>Enter text:</label></td>
+            <td><input type="text" id="inp"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="check" onclick="alphanumeric(document.getElementById('inp'))"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
